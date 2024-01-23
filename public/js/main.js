@@ -31,12 +31,11 @@ function rajoutTache() {
         }
         
     });
-    
+
     entrer.addEventListener("click", () => {
         let clone = tache.cloneNode(true)
         body.appendChild(clone)
         contenuTache.value = input.value
-
     });
 }
 
