@@ -12,16 +12,26 @@
         <h1>To do List</h1>
 
         <input type="text" placeholder="Ajoute une tâche" id="enter">
-        <button>Entrez</button>
+        <button class="entrer">Entrez</button>
     </div>
 
-    <div class="listTaches">
+    <div class="trier">
+        <h2>Trier par: </h2> 
+        <button class="tous">Tous</button>
+        <button class="faite">Faite</button>
+        <button class="enCours">En cours</button>
+    </div>
 
-        <div class="taches">
-
+    <div class="listeTaches">
+        <div class="taches"><input type="text" class="titreTache" readonly></div>
+        <div class="button">
+            <button class="finit">finit</button>
+            <button class="modifier">modifier</button>
+            <button class="effacer">effacer</button>
         </div>
-
     </div>
+
+    
 
 
     <script src="./public/js/main.js"></script>

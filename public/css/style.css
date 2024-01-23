@@ -11,17 +11,19 @@
 body {
     margin: 0px;
     padding: 0px;
-    width: 100vw;
-    height: 100vh;
+    width: cover;
+    height: cover;
     background-color: #5b9698;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    font-family: myFirstFont;
 }
 
 .head {
     width: 100%;
-    height: 500px;
-    font-family: myFirstFont;
+    height: 250px;
+
 }   
 
 h1 {
@@ -29,34 +31,30 @@ h1 {
     height: 100px;
     width: 100%;
     padding-left: 500px;
-    background-color: #fcbe5b;
+    background-color: #31352b;
     font-weight: bold;
     font-size: 70px;
     font-family: titleFont;
     font-style: italic;
     border: 2px solid black;
-    box-shadow: -4px -6px 5px 0px rgba(12,10,25,0.75);
-    -webkit-box-shadow: -4px -6px 5px 0px rgba(12,10,25,0.75);
-    -moz-box-shadow: -4px -6px 5px 0px rgba(12,10,25,0.75);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-shadow: 2px 2px 5px;
 }
 
-input {
+#enter {
     width: 300px;
     height: 30px;
     margin-left: 470px;
     border: 2px black solid;
     font-family: myFirstFont;
-    box-shadow: -4px -6px 5px 0px rgba(12,10,25,0.75);
-    -webkit-box-shadow: -4px -6px 5px 0px rgba(12,10,25,0.75);
-    -moz-box-shadow: -4px -6px 5px 0px rgba(12,10,25,0.75);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 7px;
 }
 
-button {
-    position: relative;
+.entrer {
     display: inline-block;
     width: 70px;
-    height: 35px;
+    height: 33px;
     font-family: myFirstFont;
     text-align: center;
     font-size: 18px;
@@ -68,12 +66,167 @@ button {
     transition: ease-out 0.5s;
     border: 2px solid black;
     box-shadow: inset 0 0 0 0 #725AC1;
+    border-radius: 7px;
 }
   
-button:hover {
+.entrer:hover {
+    box-shadow: inset 0 -100px 0 0 blue;
+}
+  
+.entrer:active {
+    transform: scale(0.9);
+}
+
+.listeTaches {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 450px;
+    margin-top: 50px;
+    height: 150px;
+    width: 400px;
+    background-color: #2558a7;
+    border: 3px solid black;
+}
+
+.finit {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    font-family: myFirstFont;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid black;
+    box-shadow: inset 0 0 0 0 #725AC1;
+    margin-top: 50px;
+    border-radius: 7px;
+}
+
+.finit:hover {
     box-shadow: inset 0 -100px 0 0 green;
 }
   
-button:active {
+.finit:active {
+    transform: scale(0.9);
+}
+
+.modifier {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    font-family: myFirstFont;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid black;
+    box-shadow: inset 0 0 0 0 #725AC1;
+    border-radius: 7px;
+}
+
+.modifier:hover {
+    box-shadow: inset 0 -100px 0 0 yellow;
+}
+  
+.modifier:active {
+    transform: scale(0.9);
+}
+
+.effacer {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    font-family: myFirstFont;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid black;
+    box-shadow: inset 0 0 0 0 #725AC1;
+    border-radius: 7px;
+}
+
+.effacer:hover {
+    box-shadow: inset 0 -100px 0 0 red;
+}
+  
+.effacer:active {
+    transform: scale(0.9);
+}
+
+.taches {
+    width: 250px;
+    height: 30px;
+}
+
+.taches input {
+    width: 100%;
+    height: 100%;
+}
+
+.trier {
+    width: 500px;
+    margin-left: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.trier button {
+    width: 90px;
+    height: 30px;
+    font-family: myFirstFont;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid black;
+    box-shadow: inset 0 0 0 0 #725AC1;
+    border-radius: 7px;
+}
+
+.tous:hover {
+    box-shadow: inset 0 -100px 0 0 blue;
+}
+  
+.tous:active {
+    transform: scale(0.9);
+}
+
+.faite:hover {
+    box-shadow: inset 0 -100px 0 0 green;
+}
+  
+.faite:active {
+    transform: scale(0.9);
+}
+
+.enCours:hover {
+    box-shadow: inset 0 -100px 0 0 red;
+}
+  
+.enCours:active {
     transform: scale(0.9);
 }
