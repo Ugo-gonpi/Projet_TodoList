@@ -1,0 +1,20 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2a3649;
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    width: 300px;
+    height: 400px;
+}   
+
+h1 {
+    color: #934f55;
+    font-weight: bold;
+    font-size: 50px;
+}
