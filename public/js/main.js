@@ -16,12 +16,28 @@ let body = document.body
 
 let tache = document.querySelector(".listeTaches")
 
+let input = document.querySelector("#enter")
+
+let contenuTache = document.querySelector(".titreTache")
 
 function rajoutTache() {
+
+    input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          let clone = tache.cloneNode(true)
+            body.appendChild(clone)
+            contenuTache.value = input.value
+        }
+        
+    });
+    
     entrer.addEventListener("click", () => {
         let clone = tache.cloneNode(true)
         body.appendChild(clone)
-    })
+        contenuTache.value = input.value
+
+    });
 }
 
 rajoutTache()
