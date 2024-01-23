@@ -1,20 +1,79 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./../src/fonts/static/Oswald-Medium.ttf);
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(./../src/fonts/static/Oswald-Bold.ttf);
+}
+
 body {
     margin: 0px;
     padding: 0px;
     width: 100vw;
     height: 100vh;
-    background-color: #2a3649;
+    background-color: #5b9698;
     display: flex;
     justify-content: center;
 }
 
-.list {
-    width: 300px;
-    height: 400px;
+.head {
+    width: 100%;
+    height: 500px;
+    font-family: myFirstFont;
 }   
 
 h1 {
-    color: #934f55;
+    color: #991721;
+    height: 100px;
+    width: 100%;
+    padding-left: 500px;
+    background-color: #fcbe5b;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 70px;
+    font-family: titleFont;
+    font-style: italic;
+    border: 2px solid black;
+    box-shadow: -4px -6px 5px 0px rgba(12,10,25,0.75);
+    -webkit-box-shadow: -4px -6px 5px 0px rgba(12,10,25,0.75);
+    -moz-box-shadow: -4px -6px 5px 0px rgba(12,10,25,0.75);
+    text-shadow: 2px 2px 5px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    margin-left: 470px;
+    border: 2px black solid;
+    font-family: myFirstFont;
+    box-shadow: -4px -6px 5px 0px rgba(12,10,25,0.75);
+    -webkit-box-shadow: -4px -6px 5px 0px rgba(12,10,25,0.75);
+    -moz-box-shadow: -4px -6px 5px 0px rgba(12,10,25,0.75);
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    font-family: myFirstFont;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid black;
+    box-shadow: inset 0 0 0 0 #725AC1;
+}
+  
+button:hover {
+    box-shadow: inset 0 -100px 0 0 green;
+}
+  
+button:active {
+    transform: scale(0.9);
 }
